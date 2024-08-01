@@ -30,16 +30,31 @@
 $ npm install --save use-pokemon
 ```
 
-```typescript
-import { myFunction, myObject, MyReactComponent } from "use-pokemon";
+OR
+
+```bash
+$ yarn add use-pokemon
 ```
 
-Specific imports, only import what you need:
+```tsx
+import { usePokemons } from "use-pokemon";
 
-```typescript
-import { myFunction } from "use-pokemon/myFunction";
-import { myObject } from "use-pokemon/myObject";
-import MyReactComponent from "use-pokemon/MyReactComponent";
+export function MyApp(){
+
+  const { pokemons } = usePokemon();
+
+  if( pokemons.length === 0 ){
+    return <h1> Loading ... </h1>;
+  }
+
+  return (
+    <div>
+      {pokemons.map(pokemon => /* ... */)}
+    </div>
+
+  )
+
+}
 ```
 
 # Contributing
