@@ -1,10 +1,10 @@
 {
-    "name": "#{REPO_NAME}#",
+    "name": "use-pokemon",
     "version": "0.0.0",
-    "description": "#{DESC}#",
+    "description": "A simple pokemon react hook (testing publishing library on NPM)",
     "repository": {
         "type": "git",
-        "url": "git://github.com/#{USER_OR_ORG}#/#{REPO_NAME}#.git"
+        "url": "git://github.com/ameliapham/use-pokemon.git"
     },
     "scripts": {
         "build": "tsc",
@@ -36,7 +36,7 @@
             "pre-commit": "lint-staged -v"
         }
     },
-    "author": "u/#{USER_OR_ORG}#",
+    "author": "u/ameliapham",
     "license": "MIT",
     "files": [
         "src/",
@@ -44,7 +44,7 @@
         "!dist/tsconfig.tsbuildinfo"
     ],
     "keywords": [],
-    "homepage": "https://github.com/#{USER_OR_ORG}#/#{REPO_NAME}#",
+    "homepage": "https://github.com/ameliapham/use-pokemon",
     "devDependencies": {
         "@types/node": "^20.2.1",
         "typescript": "^5.4.5",
